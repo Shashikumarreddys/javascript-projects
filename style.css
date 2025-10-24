@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  background-color: #081b31;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.choice {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.choice:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.choice p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#msg {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin-top: 5rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.msg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Buttons */
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #081b31;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #0a2b45;
+}
